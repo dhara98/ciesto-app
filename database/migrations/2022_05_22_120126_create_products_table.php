@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
                 ->onDelete('cascade');
             $table->string('name');
             $table->integer('price')->nullable();
-            $table->integer('stock')->default(0);
+            $table->tinyInteger('stock')->default(0);
             $table->string('video')->nullable();
             $table->timestamps();
         });
